@@ -653,6 +653,26 @@
             bindings = <&esc_0>;
             key-positions = <14 15>;
         };
+
+        collon_l {
+            bindings = <&kp COLON>;
+            key-positions = <12 28>;
+        };
+
+        collon_r {
+            bindings = <&kp COLON>;
+            key-positions = <17 28>;
+        };
+
+        semicollon_l {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <12 29>;
+        };
+
+        semicollon_r {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <17 29>;
+        };
     };
 
     keymap {
@@ -660,10 +680,10 @@
 
         alpha {
             bindings = <
-  &kp Q           &kp W               &kp E                &kp R           &kp T        &kp Y          &kp U            &kp I              &kp O                &kp P
-  &mt A LEFT_ALT  &mt S LEFT_CONTROL  &mt D LEFT_SHIFT     &mt F LEFT_GUI  &kp G        &kp BACKSPACE  &mt H RIGHT_GUI  &mt J RIGHT_SHIFT  &mt K RIGHT_CONTROL  &mt L RIGHT_ALT
-  &kp Z           &kp X               &mt C C_CHANNEL_DEC  &kp V           &kp B        &kp DEL        &kp N            &kp M              &mt COMMA SEMICOLON  &mt DOT COLON
-                                      &lt 1 CAPSLOCK       &lt 2 TAB       &kp SPACE    &kp ENTER      &lt 2 ESCAPE     &lt 1 PRINTSCREEN
+  &kp Q           &kp W               &kp E             &kp R           &kp T        &kp Y          &kp U            &kp I              &kp O                &kp P
+  &mt LEFT_ALT A  &mt LEFT_CONTROL S  &mt LEFT_SHIFT D  &mt LEFT_GUI F  &kp G        &kp BACKSPACE  &mt RIGHT_GUI H  &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L
+  &kp Z           &kp X               &kp C             &kp V           &kp B        &kp DELETE     &kp N            &kp M              &kp PERIOD           &kp COMMA
+                                      &lt 1 CAPSLOCK    &lt 2 TAB       &kp SPACE    &kp ENTER      &lt 2 ESCAPE     &lt 1 PRINTSCREEN
             >;
         };
 
