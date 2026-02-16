@@ -635,6 +635,13 @@
             bindings = <&kp LT &kp EQUAL>;
             label = "LTE";
         };
+
+        cedil: cedil {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&always_acute &kp C>;
+            label = "CEDIL";
+        };
     };
 
     combos {
@@ -692,7 +699,7 @@
             bindings = <
   &kp QUESTION  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp DOLLAR        &kp ASTERISK  &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
   &kp CARET     &kp TILDE        &kp AMPERSAND  &kp PERCENT    &kp UNDERSCORE    &kp MINUS     &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-  &kp GRAVE     &kp GRAVE        &kp GRAVE      &kp SEMICOLON  &kp COLON         &kp PLUS      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+  &kp GRAVE     &always_acute    &cedil         &kp SEMICOLON  &kp COLON         &kp PLUS      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
                                  &trans         &trans         &trans            &trans        &trans        &trans
             >;
         };
